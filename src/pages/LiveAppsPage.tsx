@@ -10,7 +10,7 @@ const LiveAppsPage: React.FC = () => {
           Published <span className="highlight">Live Apps</span>
         </h2>
         <p className="page-subtitle">
-          Applications published on the iOS App Store and Google Play Store — built by <strong>Ali Hamza</strong>.
+          Applications published on the iOS App Store and Google Play Store — built by <strong>Asad Waqas</strong>.
         </p>
       </div>
       <PortfolioGrid items={liveApps} />
