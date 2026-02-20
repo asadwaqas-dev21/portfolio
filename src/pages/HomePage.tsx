@@ -6,8 +6,6 @@ const roles = [
   "Flutter Developer",
   "Mobile App Engineer",
   "Full-Stack Developer",
-  "Backend Architect",
-  "React Native Developer",
 ];
 
 const HomePage: React.FC = () => {
@@ -81,7 +79,7 @@ const HomePage: React.FC = () => {
             </div>
 
             <h1 className="hero-name anim-fade-up" style={{ animationDelay: "0.4s" }}>
-              Ali <span className="name-accent">Hamza</span>
+              Asad <span className="name-accent">Waqas</span>
             </h1>
 
             <div className="hero-role anim-fade-up" style={{ animationDelay: "0.6s" }}>
@@ -94,7 +92,7 @@ const HomePage: React.FC = () => {
 
             <p className="hero-description anim-fade-up" style={{ animationDelay: "0.8s" }}>
               I specialize in building cross-platform mobile apps with
-              <strong> Flutter</strong> and <strong>React Native</strong>,
+              <strong> Flutter</strong> and <strong>Dart</strong>,
               and crafting robust backend APIs with
               <strong> Node.js</strong> and <strong>Django</strong>.
             </p>
@@ -124,7 +122,7 @@ const HomePage: React.FC = () => {
                 </span>
               </a>
               <a
-                href="https://www.xrossapps.com/"
+                href="https://kambtech.site/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="main-btn company-btn"
