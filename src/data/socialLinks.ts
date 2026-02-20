@@ -60,8 +60,8 @@ export const contactSocialLinks: SocialLink[] = [
 ];
 
 export const contactInfo = {
-  email: "alihumza.dev@gmail.com",
-  phone: "+92 333 3839512",
+  email: "asadwaqas.dev@gmail.com",
+  phone: "+92 302 8207226",
   phoneHref: "+923333839512",
   location: "Lahore, Pakistan",
   linkedin: "https://www.linkedin.com/in/mazanaqvi/",
