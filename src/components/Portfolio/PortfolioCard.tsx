@@ -1,22 +1,4 @@
-import type { PortfolioItem, PortfolioLink } from "../../data/portfolio";
-
-const linkIconMap: Record<PortfolioLink["type"], string> = {
-  appstore: "fab fa-app-store-ios",
-  playstore: "fab fa-google-play",
-  web: "fas fa-globe",
-  youtube: "fab fa-youtube",
-  android: "fab fa-android",
-  github: "fab fa-github",
-};
-
-const linkLabelMap: Record<PortfolioLink["type"], string> = {
-  appstore: "App Store",
-  playstore: "Play Store",
-  web: "Website",
-  youtube: "YouTube",
-  android: "Android",
-  github: "GitHub",
-};
+import type { PortfolioItem } from "../../data/portfolio";
 
 interface PortfolioCardProps {
   item: PortfolioItem;
@@ -50,9 +32,9 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ item, index }) => {
                 className="icon"
                 target="_blank"
                 rel="noopener noreferrer"
-                title={linkLabelMap[link.type]}
+                // title={linkLabelMap[link.type]}
               >
-                <i className={linkIconMap[link.type]}></i>
+               {/* // <i className={linkIconMap[link.type]}></i> */}
               </a>
             ))}
           </div>
