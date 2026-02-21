@@ -99,12 +99,12 @@ const HomePage: React.FC = () => {
 
             <div className="hero-stats anim-fade-up" style={{ animationDelay: "1s" }}>
               <div className="hero-stat">
-                <span className="hero-stat-number">20+</span>
+                <span className="hero-stat-number">7+</span>
                 <span className="hero-stat-label">Projects</span>
               </div>
               <div className="hero-stat-divider"></div>
               <div className="hero-stat">
-                <span className="hero-stat-number">5+</span>
+                <span className="hero-stat-number">2+</span>
                 <span className="hero-stat-label">Years Exp.</span>
               </div>
               <div className="hero-stat-divider"></div>
