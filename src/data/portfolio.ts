@@ -8,7 +8,7 @@ export interface PortfolioItem {
 }
 
 export interface PortfolioLink {
-  type: "appstore" | "playstore" | "web" | "youtube" | "android" | "github";
+  type: "playstore" | "web" | "youtube" | "android" | "github";
   url: string;
   label?: string;
 }
@@ -16,32 +16,29 @@ export interface PortfolioLink {
 export const websiteProjects: PortfolioItem[] = [
   {
     id: "crm-website",
-    title: "CRM Website",
+    title: "KWS Website",
     image: "/img/port0.png",
-    links: [{ type: "web", url: "https://app.salesbuckets.com/" }],
+    links: [{ type: "web", url: "https://kwsociety.org/" }],
   },
   {
     id: "crypto-website",
-    title: "Crypto Website",
+    title: "Xrossapps Website",
     image: "/img/port12.png",
-    links: [{ type: "web", url: "https://bitbuddy.ai/" }],
+    links: [{ type: "web", url: "https://www.xrossapps.com/" }],
   },
 ];
 
 export const mobileProjects: PortfolioItem[] = [
   {
     id: "eclaim-mobile",
-    title: "Live App",
+    title: "My Life Manager",
     image: "/img/port10.png",
     links: [
       {
         type: "playstore",
         url: "https://play.google.com/store/apps/details?id=com.fujitec.fujitec_eclaim",
       },
-      {
-        type: "appstore",
-        url: "https://apps.apple.com/pk/app/engagenova-eclaims/id1556445883",
-      },
+    
     ],
   },
   {
@@ -53,10 +50,7 @@ export const mobileProjects: PortfolioItem[] = [
         type: "playstore",
         url: "https://play.google.com/store/apps/details?id=kw.gov.qsa.quranapp&hl=ur",
       },
-      {
-        type: "appstore",
-        url: "https://apps.apple.com/us/app/kuwait-quran-%D9%85%D8%B5%D8%AD%D9%81-%D8%AF%D9%88%D9%84%D8%A9-%D8%A7%D9%84%D9%83%D9%88%D9%8A%D8%AA/id1661634739",
-      },
+     
     ],
   },
   {
@@ -68,10 +62,7 @@ export const mobileProjects: PortfolioItem[] = [
         type: "playstore",
         url: "https://play.google.com/store/apps/details?id=com.azaan.mashrabenaab",
       },
-      {
-        type: "appstore",
-        url: "https://apps.apple.com/pk/app/mashrab-e-naab/id6443939739",
-      },
+    
     ],
   },
   {
@@ -83,10 +74,7 @@ export const mobileProjects: PortfolioItem[] = [
         type: "playstore",
         url: "https://play.google.com/store/apps/details?id=com.myblackmarkete.cypto_app",
       },
-      {
-        type: "appstore",
-        url: "https://apps.apple.com/pk/app/my-black-market/id6446054554",
-      },
+     
     ],
   },
   {
@@ -129,10 +117,7 @@ export const liveApps: PortfolioItem[] = [
     title: "Matchark",
     image: "/img/port13.png",
     links: [
-      {
-        type: "appstore",
-        url: "https://apps.apple.com/pk/app/matchark/id1671819584",
-      },
+      
       {
         type: "playstore",
         url: "https://play.google.com/store/apps/details?id=com.linethree.android.matchark",
@@ -155,10 +140,7 @@ export const liveApps: PortfolioItem[] = [
     title: "Moshaf (Book reading app)",
     image: "/img/port11.png",
     links: [
-      {
-        type: "appstore",
-        url: "https://apps.apple.com/us/app/kuwait-quran-%D9%85%D8%B5%D8%AD%D9%81-%D8%AF%D9%88%D9%84%D8%A9-%D8%A7%D9%84%D9%83%D9%88%D9%8A%D8%AA/id1661634739",
-      },
+
       {
         type: "playstore",
         url: "https://play.google.com/store/apps/details?id=kw.gov.qsa.quranapp&hl=ur",
@@ -170,10 +152,7 @@ export const liveApps: PortfolioItem[] = [
     title: "My Black Market",
     image: "/img/port5.png",
     links: [
-      {
-        type: "appstore",
-        url: "https://apps.apple.com/pk/app/my-black-market/id6446054554",
-      },
+      
       {
         type: "playstore",
         url: "https://play.google.com/store/apps/details?id=com.myblackmarkete.cypto_app",
@@ -185,10 +164,7 @@ export const liveApps: PortfolioItem[] = [
     title: "Wave Get Signals",
     image: "/img/port8.png",
     links: [
-      {
-        type: "appstore",
-        url: "https://apps.apple.com/pk/app/wave-get-signals/id1642561925",
-      },
+     
       {
         type: "playstore",
         url: "https://play.google.com/store/apps/details?id=com.joinwave.waveinvest",
@@ -200,10 +176,7 @@ export const liveApps: PortfolioItem[] = [
     title: "Mashrab e Naab",
     image: "/img/port2.png",
     links: [
-      {
-        type: "appstore",
-        url: "https://apps.apple.com/pk/app/mashrab-e-naab/id6443939739",
-      },
+     
       {
         type: "playstore",
         url: "https://play.google.com/store/apps/details?id=com.azaan.mashrabenaab",
@@ -215,10 +188,7 @@ export const liveApps: PortfolioItem[] = [
     title: "eClaim",
     image: "/img/port10.png",
     links: [
-      {
-        type: "appstore",
-        url: "https://apps.apple.com/pk/app/engagenova-eclaims/id1556445883",
-      },
+    
       {
         type: "playstore",
         url: "https://play.google.com/store/apps/details?id=com.fujitec.fujitec_eclaim",
@@ -236,10 +206,7 @@ export const liveApps: PortfolioItem[] = [
     title: "Front Row",
     image: "/img/port4.png",
     links: [
-      {
-        type: "appstore",
-        url: "https://apps.apple.com/pk/app/front-row-live-videos/id6450548577",
-      },
+    
     ],
   },
 ];

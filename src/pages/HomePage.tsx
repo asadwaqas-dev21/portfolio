@@ -94,7 +94,7 @@ const HomePage: React.FC = () => {
               I specialize in building cross-platform mobile apps with
               <strong> Flutter</strong> and <strong>Dart</strong>,
               and crafting robust backend APIs with
-              <strong> Node.js</strong> and <strong>Django</strong>.
+              <strong> Django</strong>.
             </p>
 
             <div className="hero-stats anim-fade-up" style={{ animationDelay: "1s" }}>

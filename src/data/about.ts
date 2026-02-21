@@ -18,65 +18,49 @@ export interface TimelineItem {
 }
 
 export const skills: Skill[] = [
-  { name: "Flutter", percentage: 80, cssClass: "html" },
-  { name: "C++", percentage: 95, cssClass: "css" },
-  { name: "Unity C#", percentage: 65, cssClass: "js" },
-  { name: "Assembly Language", percentage: 70, cssClass: "react" },
-  { name: "JAVA", percentage: 87, cssClass: "node" },
-  { name: "Python", percentage: 70, cssClass: "python" },
+  { name: "Flutter", percentage: 70, cssClass: "html" },
+  { name: "Dart", percentage: 75, cssClass: "css" },
+  { name: "C++", percentage: 65, cssClass: "js" },
+  { name: "JavaScript", percentage: 70, cssClass: "react" },
+  { name: "JAVA", percentage: 70, cssClass: "node" },
+  { name: "Python", percentage: 67, cssClass: "python" },
 ];
 
 export const stats: StatItem[] = [
-  { value: "20+", label: "Projects\nCompleted" },
-  { value: "5+", label: "Years of\nProgramming experience" },
-  { value: "2+", label: "Years of\nSoftware Industry" },
-  { value: "5+", label: "Development\nFrameworks" },
+  { value: "5+", label: "Projects\nCompleted" },
+  { value: "2+", label: "Years of\nProgramming experience" },
+  { value: "1+", label: "Years of\nSoftware Industry" },
+  { value: "2+", label: "Development\nFrameworks" },
 ];
 
 export const education: TimelineItem[] = [
   {
     icon: "fas fa-graduation-cap",
-    duration: "2018 - 2022",
+    duration: "2021 - 2025",
     title: "BS Computer Science",
-    company: "FAST NUCES",
+    company: "University of Education",
     description:
-      "Studied programming, Software engineering, NLP and mobile app development.",
+      "Studied programming, Software engineering and mobile app development.",
   },
 ];
 
 export const career: TimelineItem[] = [
   {
     icon: "fas fa-laptop-code",
-    duration: "2020 - Present",
-    title: "Freelance Developer",
-    company: "Upwork",
+    duration: "2024 - Present",
+    title: "Flutter Developer",
+    company: "Xrossapps",
     description:
-      "Completed more than 20 mobile apps and websites in these 5 years. Specialized in Flutter development and full-stack web solutions.",
+      "Completed more than 5 mobile apps and websites in these 1 years. Specialized in Flutter development and frontend web solutions.",
   },
   {
     icon: "fas fa-briefcase",
-    duration: "Jan 2022 - May 2023",
-    title: "Software Engineer",
+    duration: "Jan 2024 - August 2024",
+    title: "Intern Flutter Developer",
     company: "Innovage.io",
     description:
-      "Worked on different projects in Flutter and developed many cross-platform applications for various clients and industries.",
-  },
-  {
-    icon: "fas fa-globe-americas",
-    duration: "May 2023 - Feb 2024",
-    title: "Remote Software Engineer",
-    company: "Wave USA",
-    description:
-      "Developed Flutter applications for US-based clients, focusing on scalable mobile solutions and cross-platform development.",
-  },
-  {
-    icon: "fas fa-code",
-    duration: "Feb 2024 - Present",
-    title: "Senior Developer",
-    company: "Breezelab Singapore",
-    description:
-      "Currently working remotely with Singapore-based team, developing advanced mobile applications and leading Flutter development projects.",
+      "Worked on different projects in Flutter and developed my basic understanding in flutter and dart.",
   },
 ];
 
-export const RESUME_DOWNLOAD_LINK = "/resume/august_2025.pdf";
+export const RESUME_DOWNLOAD_LINK = "/resume/asad_cv.pdf";
