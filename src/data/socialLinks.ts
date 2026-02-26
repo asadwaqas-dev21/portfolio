@@ -35,7 +35,7 @@ export const contactSocialLinks: SocialLink[] = [
   },
   {
     name: "Twitter",
-    url: "https://twitter.com/asadwaqas",
+    url: "https://x.com/asad_dev37",
     icon: "fab fa-twitter",
     cssClass: "twitter",
   },
