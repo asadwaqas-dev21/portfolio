@@ -3,7 +3,7 @@ import { heroSocialLinks } from "../data/socialLinks";
 import { RESUME_DOWNLOAD_LINK } from "../data/about";
 
 const roles = [
-  "Flutter Developer",
+  "Software Engineer",
   "Mobile App Engineer",
   "Full-Stack Developer",
 ];
