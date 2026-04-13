@@ -27,7 +27,7 @@ export const skills: Skill[] = [
 ];
 
 export const stats: StatItem[] = [
-  { value: "5+", label: "Projects\nCompleted" },
+  { value: "7+", label: "Projects\nCompleted" },
   { value: "2+", label: "Years of\nProgramming experience" },
   { value: "1+", label: "Years of\nSoftware Industry" },
   { value: "2+", label: "Development\nFrameworks" },
@@ -51,7 +51,7 @@ export const career: TimelineItem[] = [
     title: "Flutter Developer",
     company: "Xrossapps",
     description:
-      "Completed more than 5 mobile apps and websites in these 1 years. Specialized in Flutter development and frontend web solutions.",
+      "Completed more than 7 mobile apps and websites in these 1 years. Specialized in Flutter development and frontend web solutions.",
   },
   {
     icon: "fas fa-briefcase",
