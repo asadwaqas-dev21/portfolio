@@ -18,12 +18,12 @@ export interface TimelineItem {
 }
 
 export const skills: Skill[] = [
-  { name: "Flutter", percentage: 70, cssClass: "html" },
-  { name: "Dart", percentage: 75, cssClass: "css" },
-  { name: "C++", percentage: 65, cssClass: "js" },
+  { name: "Flutter", percentage: 85, cssClass: "html" },
+  { name: "Dart", percentage: 80, cssClass: "css" },
+  { name: "Next.js", percentage: 75, cssClass: "js" },
   { name: "JavaScript", percentage: 70, cssClass: "react" },
-  { name: "JAVA", percentage: 70, cssClass: "node" },
-  { name: "Python", percentage: 67, cssClass: "python" },
+  { name: "Firebase", percentage: 80, cssClass: "node" },
+  { name: "Supabase", percentage: 75, cssClass: "python" },
 ];
 
 export const stats: StatItem[] = [
@@ -45,6 +45,14 @@ export const education: TimelineItem[] = [
 ];
 
 export const career: TimelineItem[] = [
+  {
+    icon: "fas fa-laptop-code",
+    duration: "Jun 2026 - Present",
+    title: "Full-Stack Mobile App & Frontend Web Developer",
+    company: "GrowWithNextify",
+    description:
+      "Developing cross-platform mobile apps using Flutter and frontend web apps using Next.js. Integrating Firebase, Supabase, and RESTful APIs.",
+  },
   {
     icon: "fas fa-laptop-code",
     duration: "2024 - Present",

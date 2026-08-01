@@ -6,9 +6,9 @@ const MobileAppsPage: React.FC = () => {
     <section className="container active" id="mobile">
       <div className="page-header anim-fade-up">
         <span className="page-tag"><i className="fas fa-mobile-alt"></i> Mobile</span>
-        <h2 className="page-title">
+        <h1 className="page-title">
           Mobile <span className="highlight">Applications</span>
-        </h2>
+        </h1>
         <p className="page-subtitle">
           Cross-platform mobile apps for Android and iOS built with Flutter.
         </p>

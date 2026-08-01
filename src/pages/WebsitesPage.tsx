@@ -6,9 +6,9 @@ const WebsitesPage: React.FC = () => {
     <section className="container active" id="websites">
       <div className="page-header anim-fade-up">
         <span className="page-tag"><i className="fas fa-globe"></i> Websites</span>
-        <h2 className="page-title">
+        <h1 className="page-title">
           Web <span className="highlight">Projects</span>
-        </h2>
+        </h1>
         <p className="page-subtitle">
           Websites I've developed using modern web technologies and frameworks.
         </p>

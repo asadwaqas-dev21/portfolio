@@ -6,9 +6,9 @@ const ContactPage: React.FC = () => {
       <div className="contact-container">
         <div className="page-header anim-fade-up">
           <span className="page-tag"><i className="fas fa-envelope-open"></i> Contact</span>
-          <h2 className="page-title">
+          <h1 className="page-title">
             Get In <span className="highlight">Touch</span>
-          </h2>
+          </h1>
           <p className="page-subtitle">
             Ready to bring your ideas to life? Let's build something amazing together.
           </p>

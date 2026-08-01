@@ -30,6 +30,14 @@ export const websiteProjects: PortfolioItem[] = [
 
 export const mobileProjects: PortfolioItem[] = [
   {
+    id: "fieldflow-mobile",
+    title: "FieldFlow",
+    image: "/img/port4.png",
+    techStack: ["Flutter", "Python", "Django REST Framework"],
+    description: "Cross-Platform Management System. Integrated with Django REST APIs for data exchange.",
+    links: [],
+  },
+  {
     id: "eclaim-mobile",
     title: "My Life Manager",
     image: "/img/port10.png",

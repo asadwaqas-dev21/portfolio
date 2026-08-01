@@ -6,9 +6,9 @@ const LiveAppsPage: React.FC = () => {
     <section className="container active" id="live-apps">
       <div className="page-header anim-fade-up">
         <span className="page-tag"><i className="fas fa-rocket"></i> Live Apps</span>
-        <h2 className="page-title">
+        <h1 className="page-title">
           Published <span className="highlight">Live Apps</span>
-        </h2>
+        </h1>
         <p className="page-subtitle">
           Applications published on the iOS App Store and Google Play Store — built by <strong>Asad Waqas</strong>.
         </p>

@@ -21,9 +21,9 @@ const AboutPage: React.FC = () => {
     >
       <div className="page-header anim-fade-up">
         <span className="page-tag"><i className="fas fa-user"></i> About</span>
-        <h2 className="page-title">
+        <h1 className="page-title">
           Know <span className="highlight">About Me</span>
-        </h2>
+        </h1>
         <p className="page-subtitle">
           A passionate software engineer building impactful products across platforms.
         </p>
@@ -33,13 +33,10 @@ const AboutPage: React.FC = () => {
         <div className="left-about anim-fade-up" style={{ animationDelay: "0.2s" }}>
           <h4>Who I Am</h4>
           <p>
-            I'm a software engineer passionate about pushing the boundaries of
-            what's possible with mobile and web technologies. With 5+ years of
-            experience, I turn complex ideas into elegant, user-friendly applications.
+            I'm a Full-Stack Mobile App Developer and Frontend Web Developer with 2+ years of experience developing, integrating and deploying production-ready mobile and web applications. I am skilled in building cross-platform Android and iOS applications using Flutter and responsive web applications using Next.js.
           </p>
           <p>
-            I eagerly learn the latest advancements in technology and constantly
-            grow alongside my work -- always building, always improving.
+            I have experience with Firebase, Supabase, PostgreSQL, RESTful APIs, and basic backend development using Python and Django. I constantly grow alongside my work -- always building, always improving.
           </p>
           <div className="btn-con">
             <a href={RESUME_DOWNLOAD_LINK} className="main-btn" download>

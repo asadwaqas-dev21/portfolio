@@ -3,8 +3,8 @@ import { heroSocialLinks } from "../data/socialLinks";
 import { RESUME_DOWNLOAD_LINK } from "../data/about";
 
 const roles = [
-  "Software Engineer",
-  "Mobile App Engineer",
+  "Mobile App Developer",
+  "Frontend Web Developer",
   "Full-Stack Developer",
 ];
 
@@ -93,8 +93,8 @@ const HomePage: React.FC = () => {
             <p className="hero-description anim-fade-up" style={{ animationDelay: "0.8s" }}>
               I specialize in building cross-platform mobile apps with
               <strong> Flutter</strong> and <strong>Dart</strong>,
-              and crafting robust backend APIs with
-              <strong> Django</strong>.
+              and responsive frontend web applications with
+              <strong> Next.js</strong>.
             </p>
 
             <div className="hero-stats anim-fade-up" style={{ animationDelay: "1s" }}>

@@ -1,21 +1,20 @@
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { navItems } from "../../data/navigation";
 
 const Sidebar: React.FC = () => {
   const location = useLocation();
-  const navigate = useNavigate();
 
   return (
     <div className="controls">
       {navItems.map((item) => (
-        <div
+        <Link
           key={item.id}
+          to={item.path}
           className={`control ${location.pathname === item.path ? "active-btn" : ""}`}
           title={item.label}
-          onClick={() => navigate(item.path)}
         >
           <i className={item.icon}></i>
-        </div>
+        </Link>
       ))}
     </div>
   );
