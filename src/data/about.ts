@@ -42,6 +42,20 @@ export const education: TimelineItem[] = [
     description:
       "Studied programming, Software engineering and mobile app development.",
   },
+  {
+    icon: "fas fa-school",
+    duration: "2019 - 2021",
+    title: "FSc Pre-Engineering",
+    company: "City Science College, Khudian Khas, Kasur",
+    description: "Completed higher secondary education focusing on pre-engineering subjects.",
+  },
+  {
+    icon: "fas fa-book-reader",
+    duration: "2017 - 2019",
+    title: "Matriculation (Science)",
+    company: "Sadiq Memorial School, Khudian Khas, Kasur",
+    description: "Completed secondary education with a focus on science subjects.",
+  },
 ];
 
 export const career: TimelineItem[] = [
@@ -55,7 +69,7 @@ export const career: TimelineItem[] = [
   },
   {
     icon: "fas fa-laptop-code",
-    duration: "2024 - Present",
+    duration: "2024 - May 2026",
     title: "Flutter Developer",
     company: "Xrossapps",
     description:
