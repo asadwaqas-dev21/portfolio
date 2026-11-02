@@ -68,13 +68,6 @@ const HomePage: React.FC = () => {
 
   return (
     <header className="home" id="home">
-      <div className="home-bg" aria-hidden="true">
-        <span className="home-orb orb-1"></span>
-        <span className="home-orb orb-2"></span>
-        <span className="home-orb orb-3"></span>
-        <span className="home-grid"></span>
-      </div>
-
       <div className="home-inner">
         <div className="home-text">
           <span className="home-eyebrow anim-fade-up" style={{ animationDelay: "0.1s" }}>
@@ -99,7 +92,7 @@ const HomePage: React.FC = () => {
           </p>
 
           <div className="home-actions anim-fade-up" style={{ animationDelay: "0.7s" }}>
-            <a href={RESUME_DOWNLOAD_LINK} className="home-btn home-btn-primary" download>
+            <a href={RESUME_DOWNLOAD_LINK} className="ui-btn ui-btn-primary" download>
               Download Resume
               <i className="fas fa-arrow-down"></i>
             </a>
@@ -107,7 +100,7 @@ const HomePage: React.FC = () => {
               href="https://kambtech.site/"
               target="_blank"
               rel="noopener noreferrer"
-              className="home-btn home-btn-ghost"
+              className="ui-btn ui-btn-ghost"
             >
               My Company
               <i className="fas fa-arrow-right"></i>

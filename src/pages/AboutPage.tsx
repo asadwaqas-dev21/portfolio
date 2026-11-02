@@ -39,11 +39,9 @@ const AboutPage: React.FC = () => {
             I have experience with Firebase, Supabase, PostgreSQL, RESTful APIs, and basic backend development using Python and Django. I constantly grow alongside my work -- always building, always improving.
           </p>
           <div className="btn-con">
-            <a href={RESUME_DOWNLOAD_LINK} className="main-btn" download>
-              <span className="btn-text">Download Resume</span>
-              <span className="btn-icon">
-                <i className="fas fa-download"></i>
-              </span>
+            <a href={RESUME_DOWNLOAD_LINK} className="ui-btn ui-btn-primary" download>
+              Download Resume
+              <i className="fas fa-arrow-down"></i>
             </a>
           </div>
         </div>
