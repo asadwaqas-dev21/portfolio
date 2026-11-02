@@ -24,6 +24,12 @@ export const heroSocialLinks: SocialLink[] = [
     icon: "fab fa-stack-overflow",
     cssClass: "stackoverflow",
   },
+  {
+    name: "WhatsApp",
+    url: "https://wa.me/923028207226",
+    icon: "fab fa-whatsapp",
+    cssClass: "whatsapp",
+  },
 ];
 
 export const contactSocialLinks: SocialLink[] = [
@@ -57,6 +63,12 @@ export const contactSocialLinks: SocialLink[] = [
     icon: "fab fa-stack-overflow",
     cssClass: "stackoverflow",
   },
+  {
+    name: "WhatsApp",
+    url: "https://wa.me/923028207226",
+    icon: "fab fa-whatsapp",
+    cssClass: "whatsapp",
+  },
 ];
 
 export const contactInfo = {
@@ -65,4 +77,6 @@ export const contactInfo = {
   phoneHref: "+923274418427",
   location: "Lahore, Pakistan",
   linkedin: "https://www.linkedin.com/in/asad-waqas-87268a34a/",
+  whatsapp: "https://wa.me/923028207226",
+  whatsappDisplay: "+92 302 8207226",
 };

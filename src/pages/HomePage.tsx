@@ -1,11 +1,40 @@
 import { useEffect, useState } from "react";
 import { heroSocialLinks } from "../data/socialLinks";
 import { RESUME_DOWNLOAD_LINK } from "../data/about";
+import "../styles/home.scss";
 
 const roles = [
   "Mobile App Developer",
   "Frontend Web Developer",
   "Full-Stack Developer",
+];
+
+const heroStats = [
+  { value: "7+", label: "Projects" },
+  { value: "2+", label: "Years Exp." },
+  { value: "3+", label: "Companies" },
+];
+
+const techStack = [
+  "Flutter",
+  "Dart",
+  "Next.js",
+  "React",
+  "JavaScript",
+  "Firebase",
+  "Supabase",
+  "PostgreSQL",
+  "Python",
+  "Django",
+  "REST APIs",
+];
+
+// Icons that circle the photo; angle is their position on the orbit
+const orbitIcons = [
+  { name: "Flutter", angle: 0, img: "/img/flutter.png" },
+  { name: "React", angle: 90, icon: "fab fa-react", color: "#22d3ee" },
+  { name: "Python", angle: 180, icon: "fab fa-python", color: "#a78bfa" },
+  { name: "JavaScript", angle: 270, icon: "fab fa-js", color: "#facc15" },
 ];
 
 const HomePage: React.FC = () => {
@@ -38,120 +67,138 @@ const HomePage: React.FC = () => {
   }, [displayText, isDeleting, roleIndex]);
 
   return (
-    <header className="container header active" id="home">
-      <div className="header-content">
-        <div className="left-header">
-          <div className="h-shape"></div>
-          <div className="hero-image-container">
-            <div className="image-wrapper">
-              <img
-                src="/img/hero.png"
-                alt="Asad Waqas - Software Engineer"
-                className="hero-image"
-              />
-            </div>
-            <div className="image-decorations">
-              <div className="floating-icon icon-1" title="Flutter">
-                <img
-                  src="/img/flutter.png"
-                  alt="Flutter"
-                  className="tech-icon-img"
-                />
+    <header className="home" id="home">
+      <div className="home-bg" aria-hidden="true">
+        <span className="home-orb orb-1"></span>
+        <span className="home-orb orb-2"></span>
+        <span className="home-orb orb-3"></span>
+        <span className="home-grid"></span>
+      </div>
+
+      <div className="home-inner">
+        <div className="home-text">
+          <span className="home-eyebrow anim-fade-up" style={{ animationDelay: "0.1s" }}>
+            <span className="wave">👋</span> Hello, I'm
+          </span>
+
+          <h1 className="home-name anim-fade-up" style={{ animationDelay: "0.25s" }}>
+            Asad <span className="home-name-accent">Waqas</span>
+          </h1>
+
+          <p className="home-role anim-fade-up" style={{ animationDelay: "0.4s" }}>
+            <span className="home-role-prefix">I'm a</span>
+            <span className="home-typing">{displayText}</span>
+            <span className="home-cursor"></span>
+          </p>
+
+          <p className="home-desc anim-fade-up" style={{ animationDelay: "0.55s" }}>
+            I craft high-performance cross-platform mobile apps with
+            <strong> Flutter</strong> &amp; <strong>Dart</strong>, and fast,
+            responsive web experiences with <strong>Next.js</strong>,
+            taking ideas from concept to production.
+          </p>
+
+          <div className="home-actions anim-fade-up" style={{ animationDelay: "0.7s" }}>
+            <a href={RESUME_DOWNLOAD_LINK} className="home-btn home-btn-primary" download>
+              Download Resume
+              <i className="fas fa-arrow-down"></i>
+            </a>
+            <a
+              href="https://kambtech.site/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="home-btn home-btn-ghost"
+            >
+              My Company
+              <i className="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div className="home-stats anim-fade-up" style={{ animationDelay: "0.85s" }}>
+            {heroStats.map((stat) => (
+              <div className="home-stat" key={stat.label}>
+                <span className="home-stat-value">{stat.value}</span>
+                <span className="home-stat-label">{stat.label}</span>
               </div>
-              <div className="floating-icon icon-2" title="React">
-                <i className="fab fa-react"></i>
-              </div>
-              <div className="floating-icon icon-3" title="Python">
-                <i className="fab fa-python"></i>
-              </div>
-              <div className="floating-icon icon-4" title="JavaScript">
-                <i className="fab fa-js-square"></i>
-              </div>
+            ))}
+          </div>
+
+          <div className="home-social anim-fade-up" style={{ animationDelay: "1s" }}>
+            <span className="home-social-label">Find me on</span>
+            <div className="home-social-icons">
+              {heroSocialLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`home-social-link ${link.cssClass}`}
+                  title={link.name}
+                  aria-label={link.name}
+                >
+                  <i className={link.icon}></i>
+                </a>
+              ))}
             </div>
           </div>
         </div>
 
-        <div className="right-header">
-          <div className="hero-text-wrapper">
-            <div className="hero-greeting anim-fade-up" style={{ animationDelay: "0.2s" }}>
-              <span className="greeting-line"></span>
-              <span>Hello, I'm</span>
-            </div>
-
-            <h1 className="hero-name anim-fade-up" style={{ animationDelay: "0.4s" }}>
-              Asad <span className="name-accent">Waqas</span>
-            </h1>
-
-            <div className="hero-role anim-fade-up" style={{ animationDelay: "0.6s" }}>
-              <span className="role-prefix">I'm a</span>
-              <span className="role-typing">
-                {displayText}
-                <span className="typing-cursor">|</span>
-              </span>
-            </div>
-
-            <p className="hero-description anim-fade-up" style={{ animationDelay: "0.8s" }}>
-              I specialize in building cross-platform mobile apps with
-              <strong> Flutter</strong> and <strong>Dart</strong>,
-              and responsive frontend web applications with
-              <strong> Next.js</strong>.
-            </p>
-
-            <div className="hero-stats anim-fade-up" style={{ animationDelay: "1s" }}>
-              <div className="hero-stat">
-                <span className="hero-stat-number">7+</span>
-                <span className="hero-stat-label">Projects</span>
-              </div>
-              <div className="hero-stat-divider"></div>
-              <div className="hero-stat">
-                <span className="hero-stat-number">2+</span>
-                <span className="hero-stat-label">Years Exp.</span>
-              </div>
-              <div className="hero-stat-divider"></div>
-              <div className="hero-stat">
-                <span className="hero-stat-number">2+</span>
-                <span className="hero-stat-label">Companies</span>
-              </div>
-            </div>
-
-            <div className="hero-actions anim-fade-up" style={{ animationDelay: "1.2s" }}>
-              <a href={RESUME_DOWNLOAD_LINK} className="main-btn" download>
-                <span className="btn-text">Download Resume</span>
-                <span className="btn-icon">
-                  <i className="fas fa-download"></i>
-                </span>
-              </a>
-              <a
-                href="https://kambtech.site/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="main-btn company-btn"
+        <div className="home-visual anim-fade-up" style={{ animationDelay: "0.4s" }}>
+          <div className="home-orbit">
+            {orbitIcons.map((item) => (
+              <span
+                key={item.name}
+                className="home-orbit-slot"
+                style={{ "--angle": `${item.angle}deg` } as React.CSSProperties}
               >
-                <span className="btn-text">My Company</span>
-                <span className="btn-icon">
-                  <i className="fas fa-external-link-alt"></i>
+                <span className="home-orbit-icon" title={item.name}>
+                  {item.img ? (
+                    <img src={item.img} alt={item.name} />
+                  ) : (
+                    <i className={item.icon} style={{ color: item.color }}></i>
+                  )}
                 </span>
-              </a>
-            </div>
+              </span>
+            ))}
+          </div>
 
-            <div className="hero-social-links anim-fade-up" style={{ animationDelay: "1.4s" }}>
-              <h4>Connect With Me</h4>
-              <div className="hero-social-icons">
-                {heroSocialLinks.map((link) => (
-                  <a
-                    key={link.name}
-                    href={link.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`hero-social-link ${link.cssClass}`}
-                    title={link.name}
-                  >
-                    <i className={link.icon}></i>
-                  </a>
-                ))}
-              </div>
+          <div className="home-photo-frame">
+            <div className="home-photo">
+              <img
+                src="/asad_hero.jpg"
+                width={720}
+                height={814}
+                alt="Asad Waqas - Software Engineer"
+              />
             </div>
           </div>
+
+          <div className="home-card card-top">
+            <span className="home-card-icon"><i className="fas fa-mobile-alt"></i></span>
+            <div>
+              <strong>Mobile Apps</strong>
+              <span>Android &amp; iOS</span>
+            </div>
+          </div>
+
+          <div className="home-card card-bottom">
+            <span className="home-card-icon"><i className="fas fa-code"></i></span>
+            <div>
+              <strong>Web Apps</strong>
+              <span>Next.js &amp; React</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="home-marquee" aria-label="Tech stack">
+        <div className="home-marquee-track">
+          {[...techStack, ...techStack].map((tech, i) => (
+            <span className="home-marquee-item" key={i} aria-hidden={i >= techStack.length}>
+              {tech}
+              <i className="fas fa-star-of-life"></i>
+            </span>
+          ))}
         </div>
       </div>
     </header>

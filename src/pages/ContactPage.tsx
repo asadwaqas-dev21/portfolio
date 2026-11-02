@@ -67,6 +67,21 @@ const ContactPage: React.FC = () => {
                   <p>Connect on LinkedIn</p>
                 </div>
               </a>
+
+              <a
+                href={contactInfo.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-card clickable"
+              >
+                <div className="contact-icon-wrapper">
+                  <i className="fab fa-whatsapp"></i>
+                </div>
+                <div className="contact-details">
+                  <h4>WhatsApp</h4>
+                  <p>{contactInfo.whatsappDisplay}</p>
+                </div>
+              </a>
             </div>
 
             <div className="social-connect anim-fade-up" style={{ animationDelay: "0.4s" }}>

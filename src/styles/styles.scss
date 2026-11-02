@@ -157,13 +157,14 @@ section {
 .controls {
   position: fixed;
   z-index: 100;
-  top: 50%;
-  right: 3%;
+  // Center in the space below the theme toggle so the two never overlap
+  top: calc(5% + 70px + 0.5rem);
+  bottom: 0;
+  right: calc(3% + 7.5px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transform: translateY(-50%);
 
   .control {
     padding: 1rem;
@@ -263,10 +264,12 @@ section {
 // Header Content
 .header-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.15fr;
   min-height: 100vh;
   align-items: center;
   gap: 2rem;
+  // Keep hero content clear of the fixed sidebar (.controls / .theme-btn)
+  padding-right: calc(3% + 70px + 1rem);
 
   .left-header {
     display: flex;
@@ -296,7 +299,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 4rem 6rem 4rem 2rem;
+    padding: 4rem 1rem 4rem 2rem;
   }
 }
 
@@ -458,6 +461,13 @@ section {
   gap: 1rem;
   margin-bottom: 0.5rem;
   flex-wrap: wrap;
+
+  .main-btn {
+    align-self: center;
+    white-space: nowrap;
+
+    .btn-text { padding: 0 1.25rem; }
+  }
 }
 
 .company-btn {
@@ -515,7 +525,7 @@ section {
 .image-wrapper {
   position: relative;
   width: 320px;
-  height: 400px;
+  height: 360px; // matches the 720x814 photo plus 8px padding, so nothing gets cropped
   border-radius: 30px;
   overflow: hidden;
   box-shadow: var(--blob-shadow);
@@ -552,6 +562,8 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top;
+  display: block;
   border-radius: 20px;
   transition: all 0.4s ease-in-out;
   filter: brightness(0.9) contrast(0.9) opacity(0.95);
@@ -676,6 +688,8 @@ section {
   &.twitter:hover { background: #1da1f2; border-color: #1da1f2; }
   &.youtube:hover { background: #ff0000; border-color: #ff0000; }
   &.stackoverflow:hover { background: #f48024; border-color: #f48024; }
+  &.whatsapp:hover { background: #25d366; border-color: #25d366; }
+  &.instagram:hover { background: #e4405f; border-color: #e4405f; }
 }
 
 // ===== Page Header (shared across all pages) =====
@@ -1252,6 +1266,8 @@ section {
   &.github:hover { background: #333; border-color: #333; }
   &.youtube:hover { background: #ff0000; border-color: #ff0000; }
   &.stackoverflow:hover { background: #f48024; border-color: #f48024; }
+  &.whatsapp:hover { background: #25d366; border-color: #25d366; }
+  &.instagram:hover { background: #e4405f; border-color: #e4405f; }
 
   i { font-size: 1.2rem; }
   span { font-size: 0.9rem; font-weight: 500; }
@@ -1475,13 +1491,13 @@ section {
 @media screen and (max-width: 1432px) {
   .container { padding: 7rem 11rem; }
   .main-title h2 .bg-text { font-size: 5.5rem; }
-  .header-content .right-header { padding: 4rem 4rem 4rem 2rem; }
+  .header-content .right-header { padding: 4rem 1rem 4rem 2rem; }
 }
 
 // Medium-large screens
 @media screen and (max-width: 1250px) {
   .portfolios { grid-template-columns: repeat(2, 1fr); }
-  .header-content .right-header { padding: 3rem 3rem 3rem 1rem; }
+  .header-content .right-header { padding: 3rem 1rem 3rem 1rem; }
 }
 
 // Tablets and below - stack hero to single column
@@ -1543,7 +1559,7 @@ section {
 
   .image-wrapper {
     width: 280px;
-    height: 340px;
+    height: 314px;
     margin: 0 auto;
   }
 
@@ -1657,6 +1673,7 @@ section {
   .header-content {
     grid-template-columns: 1fr;
     padding-bottom: 6rem;
+    padding-right: 0;
   }
 
   .left-header .h-shape { display: none; }
@@ -1724,7 +1741,7 @@ section {
 
   .image-wrapper {
     width: 200px;
-    height: 250px;
+    height: 225px;
     border-radius: 22px;
     padding: 5px;
   }
@@ -1850,7 +1867,7 @@ section {
   .hero-actions { gap: 0.6rem; }
 
   .hero-image-container { width: 200px; }
-  .image-wrapper { width: 170px; height: 210px; }
+  .image-wrapper { width: 170px; height: 191px; }
 
   .floating-icon {
     width: 36px;
