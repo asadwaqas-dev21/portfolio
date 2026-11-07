@@ -159,9 +159,7 @@ const HomePage: React.FC = () => {
           <div className="home-photo-frame">
             <div className="home-photo">
               <img
-                src="/asad_hero.jpg"
-                width={720}
-                height={814}
+                src="/img/hero_executive.png"
                 alt="Asad Waqas - Software Engineer"
               />
             </div>
