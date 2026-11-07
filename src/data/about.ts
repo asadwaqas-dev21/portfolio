@@ -27,9 +27,9 @@ export const skills: Skill[] = [
 ];
 
 export const stats: StatItem[] = [
-  { value: "7+", label: "Projects\nCompleted" },
+  { value: "15+", label: "Projects\nCompleted" },
   { value: "2+", label: "Years of\nProgramming experience" },
-  { value: "1+", label: "Years of\nSoftware Industry" },
+  { value: "4+", label: "Companies &\nOrganizations" },
   { value: "2+", label: "Development\nFrameworks" },
 ];
 
@@ -59,6 +59,14 @@ export const education: TimelineItem[] = [
 ];
 
 export const career: TimelineItem[] = [
+  {
+    icon: "fas fa-building",
+    duration: "Nov 1, 2026 - Present",
+    title: "Assistant Program Officer",
+    company: "Punjab Information Technology Board (PITB)",
+    description:
+      "Working as Assistant Program Officer at PITB, contributing to government technology initiatives, public sector software solutions, and digital transformation programs.",
+  },
   {
     icon: "fas fa-laptop-code",
     duration: "Jun 2026 - Present",

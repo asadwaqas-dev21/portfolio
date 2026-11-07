@@ -82,7 +82,7 @@ export const mobileProjects: PortfolioItem[] = [
   {
     id: "tailor-master-app",
     title: "Tailor Master App",
-    image: "/img/port3.png",
+    image: "/img/tailor_master.jpg",
     techStack: ["Flutter", "SQLite", "Dart", "Localization"],
     description: "Localized B2B business management tool supporting English and Urdu with offline-to-online data synchronization.",
     links: [],
@@ -90,7 +90,7 @@ export const mobileProjects: PortfolioItem[] = [
   {
     id: "cash-and-carry",
     title: "Cash and Carry System",
-    image: "/img/port8.png",
+    image: "/img/cash_and_carry.jpg",
     techStack: ["Flutter", "Dart", "SQLite", "POS", "Inventory"],
     description: "Wholesale & retail point-of-sale (POS) and inventory management system with barcode billing, stock tracking, and sales analytics.",
     links: [],
@@ -98,7 +98,7 @@ export const mobileProjects: PortfolioItem[] = [
   {
     id: "college-finance-manager",
     title: "College Finance Manager App",
-    image: "/img/port6.png",
+    image: "/img/college_finance.jpg",
     techStack: ["Flutter", "Cloud Sync", "SQL", "Firebase"],
     description: "Secure financial tracking and ledger management application tailored for college administration, fee records, and institutional accounts.",
     links: [],
@@ -155,7 +155,7 @@ export const mobileProjects: PortfolioItem[] = [
   {
     id: "pos-system",
     title: "POS System",
-    image: "/img/port5.png",
+    image: "/img/pos_system.jpg",
     techStack: ["Flutter", "Dart", "SQLite", "Thermal Printer", "REST APIs"],
     description: "Modern Point of Sale (POS) solution featuring rapid barcode scanning, thermal receipt printing, shift reports, and cash drawer integration.",
     links: [],
@@ -185,25 +185,25 @@ export const liveApps: PortfolioItem[] = [
   {
     id: "tailor-master-live",
     title: "Tailor Master App",
-    image: "/img/port3.png",
+    image: "/img/tailor_master.jpg",
     links: [],
   },
   {
     id: "cash-and-carry-live",
     title: "Cash and Carry System",
-    image: "/img/port8.png",
+    image: "/img/cash_and_carry.jpg",
     links: [],
   },
   {
     id: "college-finance-live",
     title: "College Finance Manager App",
-    image: "/img/port6.png",
+    image: "/img/college_finance.jpg",
     links: [],
   },
   {
     id: "pos-system-live",
     title: "POS System",
-    image: "/img/port5.png",
+    image: "/img/pos_system.jpg",
     links: [],
   },
   {

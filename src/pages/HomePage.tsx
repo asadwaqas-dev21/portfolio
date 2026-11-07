@@ -10,9 +10,9 @@ const roles = [
 ];
 
 const heroStats = [
-  { value: "7+", label: "Projects" },
+  { value: "15+", label: "Projects" },
   { value: "2+", label: "Years Exp." },
-  { value: "3+", label: "Companies" },
+  { value: "4+", label: "Companies" },
 ];
 
 const techStack = [
