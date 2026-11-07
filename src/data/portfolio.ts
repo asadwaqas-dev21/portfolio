@@ -15,6 +15,14 @@ export interface PortfolioLink {
 
 export const websiteProjects: PortfolioItem[] = [
   {
+    id: "bait-al-ebdaa",
+    title: "Bait Al Ebdaa",
+    image: "/img/baitalebdaa.jpg",
+    description: "Luxury turnkey interior design and fit-out company in Dubai, featuring modern project showcases and design services.",
+    techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    links: [{ type: "web", url: "https://www.baitalebdaa.com/" }],
+  },
+  {
     id: "justshine-cleaning",
     title: "Just Shine Cleaning Services",
     image: "/img/justshine.jpg",
@@ -222,6 +230,12 @@ export const liveApps: PortfolioItem[] = [
     title: "Just Shine Cleaning Services",
     image: "/img/justshine.jpg",
     links: [{ type: "web", url: "https://www.justshinecleaningservices.com/" }],
+  },
+  {
+    id: "bait-al-ebdaa-live",
+    title: "Bait Al Ebdaa",
+    image: "/img/baitalebdaa.jpg",
+    links: [{ type: "web", url: "https://www.baitalebdaa.com/" }],
   },
   {
     id: "front-row",
