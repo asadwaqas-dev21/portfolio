@@ -93,4 +93,39 @@ export const career: TimelineItem[] = [
   },
 ];
 
+export const certifications: TimelineItem[] = [
+  {
+    icon: "fas fa-certificate",
+    duration: "Professional Training",
+    title: "Technical Course",
+    company: "Punjab Freelance Training Program (PFTP)",
+    description:
+      "Intensive technical coursework focused on software development methodologies, core programming concepts, and modern IT toolsets.",
+  },
+  {
+    icon: "fas fa-code",
+    duration: "Government of Pakistan",
+    title: "Certificate of Web Development",
+    company: "DigiSkills.pk",
+    description:
+      "Completed comprehensive training in responsive web application development, frontend architectures, and modern web standards.",
+  },
+  {
+    icon: "fas fa-user-tie",
+    duration: "Government of Pakistan",
+    title: "Certificate of Freelancing",
+    company: "DigiSkills.pk",
+    description:
+      "Specialized training in remote tech delivery, international freelance marketplaces, client relationship management, and project bidding.",
+  },
+  {
+    icon: "fas fa-pen-nib",
+    duration: "Government of Pakistan",
+    title: "Certificate of Content Writing",
+    company: "DigiSkills.pk",
+    description:
+      "Certified in technical writing, professional digital communication, documentation, and SEO-optimized content structuring.",
+  },
+];
+
 export const RESUME_DOWNLOAD_LINK = "/resume/asad_cv.pdf";

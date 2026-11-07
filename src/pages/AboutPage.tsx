@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import SkillBar from "../components/About/SkillBar";
 import StatCard from "../components/About/StatCard";
 import Timeline from "../components/About/Timeline";
-import { skills, stats, education, career, RESUME_DOWNLOAD_LINK } from "../data/about";
+import { skills, stats, education, career, certifications, RESUME_DOWNLOAD_LINK } from "../data/about";
 
 const AboutPage: React.FC = () => {
   const [visible, setVisible] = useState(false);
@@ -67,8 +67,9 @@ const AboutPage: React.FC = () => {
         <h4 className="section-heading">
           <i className="fas fa-clock"></i> My Timeline
         </h4>
-        <Timeline title="Education" items={education} />
         <Timeline title="Career" items={career} />
+        <Timeline title="Education" items={education} />
+        <Timeline title="Certifications" items={certifications} />
       </div>
     </section>
   );
