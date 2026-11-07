@@ -15,6 +15,14 @@ export interface PortfolioLink {
 
 export const websiteProjects: PortfolioItem[] = [
   {
+    id: "justshine-cleaning",
+    title: "Just Shine Cleaning Services",
+    image: "/img/justshine.jpg",
+    description: "Professional cleaning services platform in Abu Dhabi with online quote requests, service packages, and modern responsive design.",
+    techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    links: [{ type: "web", url: "https://www.justshinecleaningservices.com/" }],
+  },
+  {
     id: "crm-website",
     title: "KWS Website",
     image: "/img/port0.png",
@@ -208,6 +216,12 @@ export const liveApps: PortfolioItem[] = [
     title: "Salesbucket",
     image: "/img/port0.png",
     links: [{ type: "web", url: "https://app.salesbuckets.com/" }],
+  },
+  {
+    id: "justshine-cleaning-live",
+    title: "Just Shine Cleaning Services",
+    image: "/img/justshine.jpg",
+    links: [{ type: "web", url: "https://www.justshinecleaningservices.com/" }],
   },
   {
     id: "front-row",
