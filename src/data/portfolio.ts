@@ -15,6 +15,14 @@ export interface PortfolioLink {
 
 export const websiteProjects: PortfolioItem[] = [
   {
+    id: "kurchu",
+    title: "Kurchu",
+    image: "/img/kurchu.jpg",
+    description: "Mobile app development agency designing, building, and launching iOS, Android, and cross-platform apps for global startups.",
+    techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    links: [{ type: "web", url: "https://www.kurchu.com/" }],
+  },
+  {
     id: "bait-al-ebdaa",
     title: "Bait Al Ebdaa",
     image: "/img/baitalebdaa.jpg",
@@ -247,6 +255,12 @@ export const liveApps: PortfolioItem[] = [
     title: "KWS Website",
     image: "/img/port0.png",
     links: [{ type: "web", url: "https://kws-git-main-asad-s-team.vercel.app/" }],
+  },
+  {
+    id: "kurchu-live",
+    title: "Kurchu",
+    image: "/img/kurchu.jpg",
+    links: [{ type: "web", url: "https://www.kurchu.com/" }],
   },
   {
     id: "front-row",
