@@ -116,45 +116,11 @@ export const mobileProjects: PortfolioItem[] = [
     ],
   },
   {
-    id: "quran-mobile",
-    title: "Live App",
-    image: "/img/port11.png",
-    links: [
-      {
-        type: "playstore",
-        url: "https://play.google.com/store/apps/details?id=kw.gov.qsa.quranapp&hl=ur",
-      },
-     
-    ],
-  },
-  {
-    id: "mashrab-mobile",
-    title: "Live App",
-    image: "/img/port2.png",
-    links: [
-      {
-        type: "playstore",
-        url: "https://play.google.com/store/apps/details?id=com.azaan.mashrabenaab",
-      },
-    
-    ],
-  },
-  {
-    id: "blackmarket-mobile",
-    title: "Live App",
-    image: "/img/port5.png",
-    links: [
-      {
-        type: "playstore",
-        url: "https://play.google.com/store/apps/details?id=com.myblackmarkete.cypto_app",
-      },
-     
-    ],
-  },
-  {
     id: "ecommerce-demo",
-    title: "App Demo",
+    title: "E-Commerce App Demo",
     image: "/img/port7.png",
+    techStack: ["Flutter", "Dart", "REST APIs"],
+    description: "Interactive modern e-commerce mobile application showcasing product catalogs, cart, and checkout flows.",
     links: [
       {
         type: "youtube",
@@ -164,99 +130,31 @@ export const mobileProjects: PortfolioItem[] = [
   },
   {
     id: "flutter-material",
-    title: "Made With,",
+    title: "GloryGlobal (Fleet Manager)",
     image: "/img/port4.png",
-    techStack: ["Flutter", "Material UI Kit"],
+    techStack: ["Flutter", "Dart", "GPS Integration"],
+    description: "Dual-interface fleet tracking system with driver monitoring and admin dispatch dashboard.",
     links: [],
   },
   {
     id: "flutter-firebase",
-    title: "Made With,",
+    title: "Aspire (Finance Suite)",
     image: "/img/port6.png",
-    techStack: ["Flutter", "Firebase"],
+    techStack: ["Flutter", "Cloud Sync", "Firebase"],
+    description: "Secure financial tracking and ledger management app developed for institutional administration.",
     links: [],
   },
   {
     id: "flutter-ml",
-    title: "Made With,",
+    title: "Whisper Guard (AI Chat)",
     image: "/img/port1.png",
-    techStack: ["Flutter", "Firebase", "Machine Learning API"],
+    techStack: ["Flutter", "Python", "Machine Learning APIs"],
+    description: "Real-time, low-latency secure messaging app built with end-to-end security and AI safety protocols.",
     links: [],
   },
 ];
 
 export const liveApps: PortfolioItem[] = [
-  {
-    id: "matchark",
-    title: "Matchark",
-    image: "/img/port13.png",
-    links: [
-      
-      {
-        type: "playstore",
-        url: "https://play.google.com/store/apps/details?id=com.linethree.android.matchark",
-      },
-    ],
-  },
-  {
-    id: "streetswag",
-    title: "StreetSwag",
-    image: "/img/port14.png",
-    links: [
-      {
-        type: "android",
-        url: "https://drive.google.com/uc?export=download&id=1SLO19cHaWPyBaDGTCAw8Tj570AWQ2HlA",
-      },
-    ],
-  },
-  {
-    id: "moshaf",
-    title: "Moshaf (Book reading app)",
-    image: "/img/port11.png",
-    links: [
-
-      {
-        type: "playstore",
-        url: "https://play.google.com/store/apps/details?id=kw.gov.qsa.quranapp&hl=ur",
-      },
-    ],
-  },
-  {
-    id: "blackmarket",
-    title: "My Black Market",
-    image: "/img/port5.png",
-    links: [
-      
-      {
-        type: "playstore",
-        url: "https://play.google.com/store/apps/details?id=com.myblackmarkete.cypto_app",
-      },
-    ],
-  },
-  {
-    id: "wave-signals",
-    title: "Wave Get Signals",
-    image: "/img/port8.png",
-    links: [
-     
-      {
-        type: "playstore",
-        url: "https://play.google.com/store/apps/details?id=com.joinwave.waveinvest",
-      },
-    ],
-  },
-  {
-    id: "mashrab-naab",
-    title: "Mashrab e Naab",
-    image: "/img/port2.png",
-    links: [
-     
-      {
-        type: "playstore",
-        url: "https://play.google.com/store/apps/details?id=com.azaan.mashrabenaab",
-      },
-    ],
-  },
   {
     id: "eclaim",
     title: "My Life Manager App",
