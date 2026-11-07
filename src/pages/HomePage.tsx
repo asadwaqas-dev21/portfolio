@@ -50,8 +50,10 @@ const HomePage: React.FC = () => {
     if (!isDeleting && displayText === currentRole) {
       timeout = setTimeout(() => setIsDeleting(true), 2000);
     } else if (isDeleting && displayText === "") {
-      setIsDeleting(false);
-      setRoleIndex((prev) => (prev + 1) % roles.length);
+      timeout = setTimeout(() => {
+        setIsDeleting(false);
+        setRoleIndex((prev) => (prev + 1) % roles.length);
+      }, 400);
     } else if (isDeleting) {
       timeout = setTimeout(
         () => setDisplayText((prev) => prev.slice(0, -1)),
@@ -96,7 +98,7 @@ const HomePage: React.FC = () => {
               <i className="fas fa-arrow-down"></i>
             </a>
             <a
-              href="https://kambtech.site/"
+              href="https://www.kambohtechnologies.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="ui-btn ui-btn-ghost"

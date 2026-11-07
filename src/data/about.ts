@@ -20,10 +20,12 @@ export interface TimelineItem {
 export const skills: Skill[] = [
   { name: "Flutter & Dart", percentage: 90, cssClass: "html" },
   { name: "Bloc / GetX / Provider", percentage: 88, cssClass: "css" },
-  { name: "Python & Django REST", percentage: 80, cssClass: "react" },
-  { name: "Next.js & React", percentage: 75, cssClass: "js" },
+  { name: "Next.js & React", percentage: 80, cssClass: "js" },
+  { name: "Deployment (Play Store, Vercel, Netlify)", percentage: 85, cssClass: "node" },
   { name: "Firebase & Supabase", percentage: 80, cssClass: "node" },
   { name: "REST APIs & SQLite", percentage: 82, cssClass: "python" },
+  { name: "SEO (Search Engine Optimization)", percentage: 70, cssClass: "js" },
+  { name: "Python & Django", percentage: 50, cssClass: "react" },
 ];
 
 export const stats: StatItem[] = [

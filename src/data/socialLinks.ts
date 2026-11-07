@@ -8,7 +8,7 @@ export interface SocialLink {
 export const heroSocialLinks: SocialLink[] = [
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/asad-waqas-87268a34a/",
+    url: "https://www.linkedin.com/in/asad-waqas-software-developer/",
     icon: "fab fa-linkedin-in",
     cssClass: "linkedin",
   },
@@ -76,7 +76,7 @@ export const contactInfo = {
   phone: "+92 302 8207226",
   phoneHref: "+923274418427",
   location: "Lahore, Pakistan",
-  linkedin: "https://www.linkedin.com/in/asad-waqas-87268a34a/",
+  linkedin: "https://www.linkedin.com/in/asad-waqas-software-developer/",
   whatsapp: "https://wa.me/923028207226",
   whatsappDisplay: "+92 302 8207226",
 };

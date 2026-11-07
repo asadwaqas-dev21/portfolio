@@ -15,6 +15,14 @@ export interface PortfolioLink {
 
 export const websiteProjects: PortfolioItem[] = [
   {
+    id: "kamboh-technologies",
+    title: "Kamboh Technologies",
+    image: "/img/kambohtechnologies.jpg",
+    description: "Official software house platform delivering iOS, Android, and web applications, custom software, and digital solutions.",
+    techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    links: [{ type: "web", url: "https://www.kambohtechnologies.com/" }],
+  },
+  {
     id: "kurchu",
     title: "Kurchu",
     image: "/img/kurchu.jpg",
@@ -235,6 +243,12 @@ export const liveApps: PortfolioItem[] = [
     title: "Kurchu",
     image: "/img/kurchu.jpg",
     links: [{ type: "web", url: "https://www.kurchu.com/" }],
+  },
+  {
+    id: "kamboh-technologies-live",
+    title: "Kamboh Technologies",
+    image: "/img/kambohtechnologies.jpg",
+    links: [{ type: "web", url: "https://www.kambohtechnologies.com/" }],
   },
   {
     id: "front-row",
