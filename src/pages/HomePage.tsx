@@ -18,14 +18,15 @@ const heroStats = [
 const techStack = [
   "Flutter",
   "Dart",
-  "Next.js",
-  "React",
-  "JavaScript",
-  "Firebase",
-  "Supabase",
-  "PostgreSQL",
+  "Bloc",
+  "GetX",
+  "Provider",
   "Python",
   "Django",
+  "Next.js",
+  "React",
+  "Firebase",
+  "Supabase",
   "REST APIs",
 ];
 
@@ -86,9 +87,7 @@ const HomePage: React.FC = () => {
 
           <p className="home-desc anim-fade-up" style={{ animationDelay: "0.55s" }}>
             I craft high-performance cross-platform mobile apps with
-            <strong> Flutter</strong> &amp; <strong>Dart</strong>, and fast,
-            responsive web experiences with <strong>Next.js</strong>,
-            taking ideas from concept to production.
+            <strong> Flutter</strong> &amp; <strong>Dart</strong> (BLoC, GetX, Provider), robust backends with <strong>Django &amp; Python</strong>, and responsive web experiences with <strong>Next.js</strong>.
           </p>
 
           <div className="home-actions anim-fade-up" style={{ animationDelay: "0.7s" }}>
