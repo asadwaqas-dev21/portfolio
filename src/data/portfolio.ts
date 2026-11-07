@@ -34,7 +34,12 @@ export const websiteProjects: PortfolioItem[] = [
     id: "crm-website",
     title: "KWS Website",
     image: "/img/port0.png",
-    links: [{ type: "web", url: "https://kwsociety.org/" }],
+    description: "Web application developed for Kuwait Water Society (KWS).",
+    techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    links: [
+      { type: "web", url: "https://kws-git-main-asad-s-team.vercel.app/", label: "Vercel Live" },
+      { type: "web", url: "https://kwsociety.org/", label: "Domain" },
+    ],
   },
   {
     id: "crypto-website",
@@ -236,6 +241,12 @@ export const liveApps: PortfolioItem[] = [
     title: "Bait Al Ebdaa",
     image: "/img/baitalebdaa.jpg",
     links: [{ type: "web", url: "https://www.baitalebdaa.com/" }],
+  },
+  {
+    id: "kws-website-live",
+    title: "KWS Website",
+    image: "/img/port0.png",
+    links: [{ type: "web", url: "https://kws-git-main-asad-s-team.vercel.app/" }],
   },
   {
     id: "front-row",
