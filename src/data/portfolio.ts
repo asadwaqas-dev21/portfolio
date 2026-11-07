@@ -68,14 +68,51 @@ export const mobileProjects: PortfolioItem[] = [
   },
   {
     id: "eclaim-mobile",
-    title: "My Life Manager",
+    title: "My Life Manager App",
     image: "/img/port10.png",
+    techStack: ["Flutter", "Firebase", "Dart", "CRUD Operations"],
+    description: "All-in-one personal productivity and finance suite centralizing daily journaling, expense tracking, and project tasks.",
     links: [
       {
         type: "playstore",
         url: "https://play.google.com/store/apps/details?id=com.fujitec.fujitec_eclaim",
       },
-    
+    ],
+  },
+  {
+    id: "tailor-master-app",
+    title: "Tailor Master App",
+    image: "/img/port3.png",
+    techStack: ["Flutter", "SQLite", "Dart", "Localization"],
+    description: "Localized B2B business management tool supporting English and Urdu with offline-to-online data synchronization.",
+    links: [],
+  },
+  {
+    id: "justshine-cleaning-app",
+    title: "Just Shine Cleaning Services App",
+    image: "/img/justshine.jpg",
+    techStack: ["Flutter", "Dart", "REST APIs", "Firebase"],
+    description: "On-demand cleaning services mobile app with service booking, real-time schedule tracking, and instant quote estimates.",
+    links: [
+      {
+        type: "web",
+        url: "https://www.justshinecleaningservices.com/",
+        label: "Visit Platform",
+      },
+    ],
+  },
+  {
+    id: "baitalebdaa-interior-app",
+    title: "Baitalebdaa Interior Services App",
+    image: "/img/baitalebdaa.jpg",
+    techStack: ["Flutter", "Dart", "REST APIs"],
+    description: "Luxury interior design and turnkey fit-out client app showcasing villa and office projects with booking consultation.",
+    links: [
+      {
+        type: "web",
+        url: "https://www.baitalebdaa.com/",
+        label: "Visit Platform",
+      },
     ],
   },
   {
@@ -222,15 +259,20 @@ export const liveApps: PortfolioItem[] = [
   },
   {
     id: "eclaim",
-    title: "eClaim",
+    title: "My Life Manager App",
     image: "/img/port10.png",
     links: [
-    
       {
         type: "playstore",
         url: "https://play.google.com/store/apps/details?id=com.fujitec.fujitec_eclaim",
       },
     ],
+  },
+  {
+    id: "tailor-master-live",
+    title: "Tailor Master App",
+    image: "/img/port3.png",
+    links: [],
   },
   {
     id: "salesbucket",
@@ -240,13 +282,13 @@ export const liveApps: PortfolioItem[] = [
   },
   {
     id: "justshine-cleaning-live",
-    title: "Just Shine Cleaning Services",
+    title: "Just Shine Cleaning Services App",
     image: "/img/justshine.jpg",
     links: [{ type: "web", url: "https://www.justshinecleaningservices.com/" }],
   },
   {
     id: "bait-al-ebdaa-live",
-    title: "Bait Al Ebdaa",
+    title: "Baitalebdaa Interior Services App",
     image: "/img/baitalebdaa.jpg",
     links: [{ type: "web", url: "https://www.baitalebdaa.com/" }],
   },
